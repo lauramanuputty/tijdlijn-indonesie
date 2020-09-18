@@ -1,0 +1,342 @@
+/*media mobiel (min-width: 375px)*/
+		body{
+			background-color: #ACD0DE;
+			height: 100%;
+			padding: 0;
+			margin:0;
+			box-sizing:border-box;
+			font-family: tahoma;
+		}
+		
+		.hero-image{
+			position: relative;
+			height:500px;
+			overflow:hidden;
+			background:url('../images/indonesie.jpg') no-repeat center;
+			background-size: cover;
+		}
+	
+		.container{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			overflow: hidden;
+			text-align: center;
+			color: white; 
+			font-weight: 700;
+			justify-content:center;
+			text-transform: uppercase;
+		}
+		
+		.container h2{
+			font-size: 40px;
+			letter-spacing: 0.2em;
+		}
+		
+		.container h3{
+			font-size: 20px;
+			letter-spacing: 0.1em;
+		}
+		
+		.tijdlijn{
+			display:flex;
+			margin: 0 auto;
+			max-width: 1200px;
+			position:relative;
+			flex-wrap:wrap;
+			flex-direction:column;
+		}
+		
+		.tijdlijn-content{
+			max-width:100%;
+		}
+		
+		.tijdlijn-content-titel{
+			font-weight: bold;
+			font-size:40px;
+			margin: -50px 0 0 -30px;
+			transition: 0.5s;
+			padding: 0 10px;
+			box-sizing: border-box;
+			color:#FFFDFD;
+			text-shadow: 0px 2.5px #D8BDBD;
+		}
+		
+		.tijdlijn-content-ondertitel{
+			font-weight: normal;
+			font-size:18px;
+			margin: 10px 0px 20px -10px;
+			transition: 0.5s;
+			padding: 0 10px;
+			box-sizing: border-box;
+			color:#707070;
+		}
+		
+		.tijdlijn-content-tekst{
+			margin:0;
+			box-sizing: border-box;
+			color: #707070;
+			font-family: raavi;
+			font-size: 18px;
+			font-weight:normal;
+			line-height:25px;
+			background-color: #FFFDFD; 
+			box-shadow: 15px 12px 5px grey;
+			max-width:100%
+
+		}
+		
+		.tijdlijn-item-links{
+			box-sizing: border-box;
+			padding:50px;
+			transition: 0.5s;
+			width: 100%;
+			display: flex;
+			position: relative;
+			max-width:100%
+			
+		}
+		
+		.tijdlijn-item-rechts{
+			box-sizing: border-box;
+			padding:50px;
+			transition: 0.5s;
+			width: 100%;
+			display: flex;
+			position: relative;
+			max-width:100%;
+			
+		}
+		
+		.tijdlijn-item-links::before{
+			letter-spacing: 3px;
+			width: 100%;
+			font-size: 15px;
+			position: absolute;
+			top: 70%;
+			margin-top: -5px;
+			padding-left: 15px;
+			opacity:0;
+		}
+		
+		.tijdlijn-item-rechts::before{
+			letter-spacing: 3px;
+			width: 100%;
+			font-size: 15px;
+			position: absolute;
+			top: 70%;
+			margin-top: -5px;
+			padding-left: 15px;
+			opacity:0;
+		}
+		
+		.tijdlijn-foto{
+			width: 360px;
+			height:544px;
+			box-shadow: 10px 7px 2px grey;
+			margin-top:100px;
+			max-width:100%;
+		}
+		
+		
+/*media ipad (min-width: 769px)*/
+		
+	@media only screen and (min-width:768px){
+		
+		.container h2{
+			font-size: 50px;
+			letter-spacing: 0.2em;
+		}
+		
+		.container h3{
+			font-size: 30px;
+			letter-spacing: 0.1em;
+		}
+		
+		.tijdlijn-content-titel{
+			font-weight: bold;
+			font-size:40px;
+			margin: -50px 0 0 50px;
+			display: block;
+		}
+		
+		.tijdlijn-content-ondertitel{
+			margin: 10px 0px 20px 50px;
+		}
+		
+		.tijdlijn-content-tekst{
+			font-size: 19px;
+			max-width:100%;
+			
+		}
+		
+		.tijdlijn-item-rechts{
+			display:flex;
+			box-sizing: border-box;
+			margin-left:auto;
+			margin-left: auto;
+		}
+		
+		.tijdlijn-item-left{
+			display:flex;
+			box-sizing: border-box;
+			margin-left:auto;
+			margin-left: auto;
+		}
+		
+		.tijdlijn-foto{
+			width: 310px;
+			height:504px;
+			box-shadow: 8px 6px 1.5px grey;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+	}
+	
+		
+/*media laptop (min-width: 1280px)*/
+		
+	@media only screen and (min-width:1024px){
+		
+		.container h2{
+			font-size: 60px;
+		}
+		
+		.container h3{
+			font-size: 40px;
+		}
+	
+		.tijdlijn{
+			margin: 0 auto;
+			max-width: 1000px;
+			position:relative;
+			flex-wrap:wrap;
+			flex-direction:column;
+		}
+		
+		.tijdlijn::after {
+			  content: '';
+			  position: absolute;
+			  border-left: 5px solid #707070;
+			  height:100%;
+			  left: 50%;
+			  margin-left: -3px;
+		}
+		
+		.tijdlijn-content-titel{
+			font-size:55px;
+			margin: -50px 0 0 -30px;
+			text-shadow: 0px 4px #D8BDBD;
+		}
+		
+		.tijdlijn-content-ondertitel{
+			font-size:18px;
+			margin: 10px 0px 20px -10px;
+		}
+		
+		.tijdlijn-content-tekst{
+			font-size: 19px;
+			box-shadow: 15px 12px 5px grey;
+		}
+		
+		.tijdlijn-item-links{
+			box-sizing: border-box;
+			padding:40px;
+			transition: 0.5s;
+			width: 50%;
+			display: flex;
+			position: relative;
+			float:left;
+		}
+		
+		.tijdlijn-item-rechts{
+			padding:40px;
+			width: 50%;
+			display: flex;
+			float:right;
+		}
+		
+		.tijdlijn-item-links::after {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			right: -9.5px;
+			background-color: #707070;
+			margin-top: 640px;
+			border-radius: 50%;
+			z-index: 1;
+		}
+
+		.tijdlijn-item-rechts::after {
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			left: -9.5px;
+			background-color: #707070;
+			margin-top: 635px;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		
+		.tijdlijn-foto{
+			width: 380px;
+			height:564px;
+			box-shadow: 10px 7px 2px grey;
+		}
+		
+	}
+	
+	
+/*media desktop (min-width: 1440px)*/
+		
+	@media only screen and (min-width: 1440px){
+		.container h2{
+			font-size: 70px;
+		}
+		
+		.container h3{
+			font-size: 50px;
+		}
+	
+		.tijdlijn-content-titel{
+			font-size:65px;
+			margin: -50px 0 0 -30px;
+			text-shadow: 0px 5px #D8BDBD;
+		}
+		
+		.tijdlijn-content-ondertitel{
+			font-size:24px;
+			margin: 10px 0px 20px -10px;
+		}
+		
+		.tijdlijn-content-tekst{
+			font-size: 20px;
+			box-shadow: 15px 12px 5px grey;
+		}
+		
+		.tijdlijn-item-links::after {
+			width: 28px;
+			height: 28px;
+			right: -14.5px;
+			margin-top: 665px;
+		}
+
+		.tijdlijn-item-rechts::after {
+			width: 28px;
+			height: 28px;
+			left: -14.5px;
+			margin-top: 665px;
+		}
+		
+		.tijdlijn-foto{
+			width: 400px;
+			height:584px;
+			box-shadow: 10px 7px 2px grey;
+			max-width:100%;
+		}
+	}
