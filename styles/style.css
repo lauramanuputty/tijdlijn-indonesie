@@ -282,13 +282,6 @@
 			border-radius: 50%;
 			z-index: 1;
 		}
-		
-		.tijdlijn-foto{
-			width: 380px;
-			height:564px;
-			box-shadow: 10px 7px 2px grey;
-		}
-		
 	}
 	
 	
@@ -331,12 +324,5 @@
 			height: 28px;
 			left: -14.5px;
 			margin-top: 665px;
-		}
-		
-		.tijdlijn-foto{
-			width: 400px;
-			height:584px;
-			box-shadow: 10px 7px 2px grey;
-			max-width:100%;
 		}
 	}
